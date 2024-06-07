@@ -1,0 +1,18 @@
+--- Running Simulations ---
+--- Finished simulations ---
+
+--- Analysis of simulations by transitional states ---
+  Transitions from simulation #1:
+B -> B: 7.16e-07 (720)
+B -> C: 4.71e-02 (1)
+C -> C: 1.10e-06 (4417)
+  Transitions averaged over all 5 simulations:
+A -> A: 7.71e-07 (74490)
+B -> A: 4.22e-02 (1)
+B -> B: 1.41e-06 (4530)
+B -> C: 6.44e-02 (3)
+C -> C: 1.20e-06 (5074)
+SUCCESS: A
+initial: B
+interm_with_a: C
+interm_with_b: D

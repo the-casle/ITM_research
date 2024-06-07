@@ -1,0 +1,19 @@
+# Specify all domains
+sequence one = GGTGGG : 6
+sequence tag = ACAGTA : 6
+sequence reg0 = CGTGGCTCACCACGCGTATACGCCGACGCC : 30
+
+# Specify all strands
+
+strand data0_1s = tag reg0 one : 42
+strand backbone = reg0* : 30
+strand stripper = one* reg0* : 32
+
+# Specify all predicted complexes
+
+structure cData0_1s = data0_1s : ...
+structure cBackbone = backbone : .
+structure cStrip = stripper : ..
+structure start = data0_1s + backbone : .(.+)
+structure success_match = data0_1s + stripper : .((+))
+

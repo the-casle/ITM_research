@@ -1,0 +1,30 @@
+
+# Specify all domains
+sequence key = CATTAA : 6
+sequence one = GGTGGG : 6
+sequence reg0 = CGTGGCTCACCACGCGTATACGCCGACGCC : 30
+sequence reg1 = CGACGTGCGCGTGTGCGTCTACAGGCCCCC : 30
+
+# Specify all strands
+
+strand data0_1s = one reg0 one : 42
+strand data1_1s = one reg1 one : 42
+strand backbone = reg1* reg0* : 60
+strand cleaner = reg0 key reg1 : 66
+strand stripper_1_1 = one* reg1* key* reg0* one* : 78
+
+# Specify all predicted complexes
+
+structure cData0_1s = data0_1s : ...
+structure cData1_1s = data1_1s : ...
+structure cBackbone = backbone : ..
+structure cStrip = stripper_1_1 : .....
+structure cCleaner = cleaner : ...
+structure left_with_strip = data0_1s + stripper_1_1 :  ((.+...))
+structure right_with_strip = data1_1s + stripper_1_1 : .((+))...
+structure left_with_backbone = data0_1s + backbone : .(.+.)
+structure right_with_backbone = data1_1s + backbone : .(.+).
+structure failure_match = data0_1s + data1_1s + backbone : .(.+.(.+))
+structure success_match = data0_1s + data1_1s + stripper_1_1 : ((.+.((+)).))
+structure cleaner_backbone = cleaner + backbone : (.(+))
+structure cleaner_stripper = cleaner + stripper_1_1 : (((+.))).

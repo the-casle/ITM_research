@@ -1,0 +1,14 @@
+Multistrand 2.2
+
+sodium        :  1 M
+magnesium     :  0 M
+temperature   :  298.15 K
+rate method   :  1  (1: Metropolis, 2: Kawasaki, 3: Arrhenius)
+dangles       :  1  (0: none, 1: some, 2: all)
+GT pairing    :  1  (0: disabled, 1: enabled)
+concentration :  1e-15 M
+Nupack params :  /home/opc/anaconda3/envs/release/lib/python3.10/site-packages/nupack/parameters/dna04-nupack3.json
+
+Kinetic parameters:
+  unimolecular_scaling :  2.4169e+06 /s
+  bimolecular_scaling  :  8.0117e+05 /M/s

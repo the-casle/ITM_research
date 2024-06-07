@@ -1,0 +1,34 @@
+Trials:              16
+Max Trials:          250000000
+Termination  Count:  None
+Num. of Threads:     16
+Run Time:            1.5280115604400635s 
+Using Results Type:  FirstStepRate
+
+Temperature: 298.15K 
+
+Start States
+Complex:
+         Name: 'automatic36'
+     Sequence: CATTCGAGTAGTTTAAATCACGACTTCTGTGCCCACCCCCCC+CATTCGCGAACGACGTACTTGAACTACAGACAACTACCCCCC+TAGTTGTCTGTAGTTCAAGTACGTCGTTCGGTGGGCACAGAAGTCGTGATTTAAACTACT
+    Structure: ......((((((((((((((((((((((((((((((......+......((((((((((((((((((((((((((((((......+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+      Strands: ['data_0', 'data_1', 'backbone']
+    Boltzmann: False
+  Supersample: 1
+
+Complex:
+         Name: 'automatic37'
+     Sequence: TTTTTTGTGGGCACAGAAGTCGTGATTTAAACTACT
+    Structure: ....................................
+      Strands: ['Automatic_77']
+    Boltzmann: False
+  Supersample: 1
+
+Stop Condition, tag:FAILURE
+  Sequence  0: CATTCGCGAACGACGTACTTGAACTACAGACAACTACCCCCC+TAGTTGTCTGTAGTTCAAGTACGTCGTTCGGTGGGCACAGAAGTCGTGATTTAAACTACT
+  Structure 0: ......((((((((((((((((((((((((((((((......+))))))))))))))))))))))))))))))..............................
+
+FirstStepRate:
+  nForward = 0
+  nReverse = 0
+
